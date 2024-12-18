@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import 'flowbite'; */
+/* In your main CSS file */
+@import 'flowbite/dist/flowbite.min.css';
+@import "flowbite";

@@ -1,0 +1,155 @@
+/* General Settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff8f0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo', sans-serif;
+  color: #593b1f;
+}
+
+p {
+  color: #593b1f;
+}
+
+/* Navbar */
+.navbar {
+  padding: 1rem;
+}
+
+.navbar .navbar-brand img {
+  width: 100px;
+}
+
+.navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #593b1f !important;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #593b1f !important;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: #fff8f0;
+}
+
+.navbar-nav .dropdown-item {
+  color: #593b1f;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background-color: #593b1f;
+  color: #fff;
+}
+
+/* Main Content */
+.container h1 {
+  font-size: 3rem;
+  color: #593b1f;
+}
+
+.container p {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-top: 1.5rem;
+  max-width: 600px;
+}
+
+.container .btn {
+  background-color: #593b1f;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.container .btn:hover {
+  background-color: #593b1f;
+}
+
+/* Login Form */
+.form.login-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-top: 50px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form p {
+  color: #593b1f;
+}
+
+.form .form-group {
+  margin-bottom: 20px;
+}
+
+.form .form-control {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.form .form-control:focus {
+  border-color: #593b1f;
+  box-shadow: 0 0 0 0.2rem rgba(255, 140, 66, 0.25);
+}
+
+.form .btn {
+  width: 100%;
+  background-color: #593b1f;
+  color: #fff;
+  font-weight: 600;
+}
+
+.form .btn:hover {
+  background-color: #593b1f;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.remember-forgot a {
+  color: #593b1f;
+}
+
+.forgot-password {
+  color: #593b1f;
+  text-decoration: none;
+}
+
+/* Alerts */
+.alert {
+  margin-top: 10px;
+}
+
+.alert-success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.alert-danger {
+  background-color: #f2dede;
+  color: #a94442;
+}

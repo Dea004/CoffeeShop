@@ -1,0 +1,260 @@
+:root {
+  --primary: #814e2b;
+  --primary-focus: #734424;
+}
+
+/*--fonts--*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+.font-poppins {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.font-archivo {
+  font-family: "Archivo", sans-serif !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+body {
+  display: flex;
+  background-color: #fff8f0;
+}
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 116px;
+  height: 100vh;
+  padding: 0 1.7rem;
+  color: #fff8f0;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  background: var(--primary-focus) !important;
+}
+.sidebar:hover {
+  width: 240px;
+  transition: 0.5s;
+}
+
+.main--content {
+  margin-left: 25px;
+  padding: 30px;
+  width: 100%;
+}
+
+.logo {
+  height: 80px;
+  align-content: center;
+  padding: 10px;
+}
+.menu {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+.menu li {
+  padding: 1rem;
+  margin: 20px 0;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+.menu li:hover,
+.active {
+  background: var(--primary) !important;
+}
+.menu a {
+  color: #fff8f0 !important;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.menu a span {
+  overflow: hidden;
+}
+.menu a i {
+  font-size: 1.2rem;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header--title {
+  color: var(--primary) !important;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.user--profile--view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff !important;
+  background-position: center;
+  border-radius: 25px;
+  padding: 30px 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+
+.user--property {
+  display: flex;
+  align-items: flex-start;
+}
+
+.user--property img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: flex-start;
+}
+.image {
+  max-width: 100%;
+  position: auto;
+  height: auto;
+}
+
+.detail-grid {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  gap: 35px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff !important;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: var(--primary-focus) !important;
+}
+
+.detail-item strong {
+  color: var(--primary-focus) !important;
+  margin-right: 300px;
+}
+
+.detail-item .btn {
+  margin-top: 10px; /* Adjust spacing as necessary */
+}
+
+.detail-item {
+  margin-bottom: 10px; /* Adds space between each item */
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-focus) !important;
+}
+
+/* Editable Form Styling */
+#editProfileForm .detail-item input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.user--profile--edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff !important;
+  background-position: center;
+  border-radius: 25px;
+  padding: 30px 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+.user--property--update {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Pop-up styling */
+/* Pop-up background */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pop-up content container */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styles */
+.popup-content button {
+  margin: 5px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.popup-content button:first-child {
+  background-color: var(--primary-focus) !important;
+  color: white;
+}
+
+.popup-content button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Hide edit form when showing pop-up */
+.user--profile--edit {
+  display: none;
+}
+
+/* To make sure the form shows in center */
+.popup.show {
+  display: flex;
+}
+
+.popup button {
+  margin: 10px;
+  padding: 10px 20px;
+}
+
+/* Responsiveness */
+@media (min-width: 768px) {
+  .detail-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
